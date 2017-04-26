@@ -69,6 +69,16 @@ class MazeField(object):
         object_of_coordinate = self.field[coordinate.y - 1][coordinate.x - 1]
         return object_of_coordinate == Finish
 
+    def __repr__(self):
+        result = []
+        for row in self.field:
+            row_str = []
+            for column in row:
+                row_str.append(str(column()))
+            row_str = ''.join(row_str)
+            result.append(row_str)
+        return '\n' + '\n'.join(result)
+
 
 def text_to_maze_attributes(textfield_lines):
     """

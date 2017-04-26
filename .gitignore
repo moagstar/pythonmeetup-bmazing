@@ -1,1 +1,4 @@
 .idea
+.hypothesis
+.venv*
+.cache

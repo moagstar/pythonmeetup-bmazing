@@ -1,6 +1,6 @@
 from .sampleplayer import SamplePlayer
 from .byteplayer import BytePlayer
-
+from .moagstar import MoagstarPlayer
 
 def get_player_by_name(name):
     import logging

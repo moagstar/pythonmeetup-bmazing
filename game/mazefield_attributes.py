@@ -2,16 +2,20 @@
 
 
 class Path(object):
-    pass
+    def __str__(self):
+        return ' '
 
 
 class Wall(object):
-    pass
+    def __str__(self):
+        return '#'
 
 
 class Finish(object):
-    pass
+    def __str__(self):
+        return '='
 
 
 class Start(Path):
-    pass
+    def __str__(self):
+        return '0'
